@@ -1,4 +1,4 @@
-package com.pectera.spring.pojo;
+package com.pectera.common.pojo;
 
 public class Customer {
     private long id;

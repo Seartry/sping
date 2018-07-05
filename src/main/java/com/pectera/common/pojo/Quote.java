@@ -1,11 +1,11 @@
-package com.pectera.spring.pojo;
+package com.pectera.common.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Value {
+public class Quote {
     private Long id;
-    private String quote;
+    private Value value;
 
     public Long getId() {
         return id;
@@ -15,28 +15,27 @@ public class Value {
         this.id = id;
     }
 
-    public String getQuote() {
-        return quote;
+    public Value getValue() {
+        return value;
     }
 
-    public void setQuote(String quote) {
-        this.quote = quote;
+    public void setValue(Value value) {
+        this.value = value;
     }
 
-    public Value() {
-
+    public Quote() {
     }
 
-    public Value(Long id, String quote) {
+    public Quote(Long id, Value value) {
         this.id = id;
-        this.quote = quote;
+        this.value = value;
     }
 
     @Override
     public String toString() {
-        return "Value{" +
+        return "Quote{" +
                 "id=" + id +
-                ", quote='" + quote + '\'' +
+                ", value=" + value +
                 '}';
     }
 }

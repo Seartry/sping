@@ -1,14 +1,12 @@
-package com.pectera.spring.controller;
+package com.pectera.common.controller;
 
-import com.pectera.spring.pojo.Greeting;
-import com.sun.scenario.effect.impl.state.GaussianRenderState;
+import com.pectera.common.pojo.Greeting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.xml.stream.events.EntityReference;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
