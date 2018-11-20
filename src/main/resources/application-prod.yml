@@ -8,9 +8,9 @@ logging:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/pectera?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/pactera?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
     username: root
-    password: zhangxp
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     connectionProperties: druid.stat.mergeSql=true
   thymeleaf:
@@ -26,7 +26,7 @@ spring:
 
 
 mybatis:
-  type-aliases-package: com.pectera.spring.model
+  type-aliases-package: com.pactera.spring.model
   mapper-locations: classpath:mappers/*.xml
 # 分页配置
 pagehelper:
