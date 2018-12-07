@@ -1,6 +1,6 @@
 package com.pactera.spring;
 
-import com.pactera.spring.service.UserService;
+import com.pactera.sys.service.SysUserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -16,7 +16,7 @@ public class ApplicationTests {
 	private static Logger logger = LoggerFactory.getLogger(ApplicationTests.class);
 
 	@Autowired
-	private UserService userService;
+	private SysUserService sysUserService;
 
 	@Test
 	public void contextLoads() {
@@ -27,6 +27,7 @@ public class ApplicationTests {
 	public void testPageHelper(){
 
 	}
+
 
 
 }

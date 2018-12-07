@@ -26,7 +26,7 @@ spring:
 
 
 mybatis:
-  type-aliases-package: com.pactera.spring.model
+  type-aliases-package: com.pactera.*.model
   mapper-locations: classpath:mappers/*.xml
 # 分页配置
 pagehelper:
